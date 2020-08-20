@@ -1,0 +1,99 @@
+/* Estilos de uso general */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fcolumn {
+  flex-direction: column;
+}
+.frow {
+  flex-direction: row;
+}
+
+/* Estilos de contenedores */
+
+.navbar {
+  grid-template-columns: minmax(279px, 300px) 1fr auto;
+  grid-template-areas: "logo links icons";
+  margin-bottom: 30px;
+}
+.content {
+  grid-template-columns: minmax(300px, 400px) 1fr;
+  margin-left: 20px;
+  position: relative;
+}
+
+/* Estilos items */
+.navbar-items {
+  grid-area: links;
+}
+.navbar-icons {
+  grid-area: icons;
+}
+.navbar-logo {
+  grid-area: logo;
+}
+.li-item {
+  padding: 0px 30px;
+}
+.li-item.navbar-logo {
+  padding: 0;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.content-img img {
+  position: relative;
+  right: -3%;
+  width: 97%;
+  height: 80%;
+}
+.black-box {
+  z-index: -1;
+  position: absolute;
+  background: black;
+  width: 3%;
+  height: 200px;
+  top: 30%;
+}
+.content-text {
+  height: 100%;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.content-text h1 {
+  font-size: 40px;
+}
+.btn {
+  width: 40%;
+  border-radius: 20px;
+  padding: 13px;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  justify-content: space-around;
+}
+.btn img {
+  width: 15%;
+}
