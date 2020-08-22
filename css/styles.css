@@ -73,9 +73,8 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  gap: 2em;
   grid-area: maincontent-text;
-  width: 400px;
+  width: 380px;
 }
 
 .maincontent-text h1 {
