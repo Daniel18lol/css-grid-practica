@@ -19,7 +19,7 @@ html {
   gap: 5em;
   grid-template-areas: "navbar" "main-content" "carousel" "lorem" "footer";
   width: 90%;
-  margin-left: 4em;
+  margin-left: 2em;
 }
 
 .navbar {
@@ -111,20 +111,20 @@ html {
   grid-template-columns: 0px repeat(3, 1fr) 0px;
   grid-template-areas: ". carousel-content1 carousel-content2 carousel-content3 .";
   grid-area: carousel;
-  align-items: center;
-  margin-top: 100px;
 }
 .carousel::before {
   content: url("../img/Flechas(2).svg");
+  align-self: center;
 }
 .carousel::after {
   content: url("../img/Flechas(1).svg");
+  align-self: center;
 }
 
 .carousel-content1 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 225px repeat(3, auto);
+  grid-template-rows: 370px repeat(3, auto);
   grid-area: carousel-content1;
   gap: 3em;
   justify-items: center;
@@ -134,11 +134,11 @@ html {
 .carousel-content2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 225px repeat(3, auto);
+  grid-template-rows: 370px repeat(3, auto);
   grid-area: carousel-content2;
   gap: 3em;
   justify-items: center;
-  align-items: center;
+  align-items: end;
 }
 div[class^="carousel-content"] > img {
   width: 70%;
@@ -150,7 +150,7 @@ div[class^="carousel-content"] > p {
 .carousel-content3 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 225px repeat(3, auto);
+  grid-template-rows: 370px repeat(3, auto);
   grid-area: carousel-content3;
   gap: 3em;
   justify-items: center;
