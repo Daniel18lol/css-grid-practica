@@ -90,9 +90,15 @@ html {
   border-radius: 1.4em;
   width: 200px;
   height: 35px;
+  padding: 0.5em;
+  text-align: center;
 }
 .vermas-btn p {
   margin-right: 2em;
+}
+.vermas-btn img {
+  width: 35px;
+  height: 35px;
 }
 .maincontent-text a img {
   width: 25px;
@@ -110,6 +116,9 @@ html {
   grid-template-columns: 0px repeat(3, 1fr) 0px;
   grid-template-areas: ". carousel-content1 carousel-content2 carousel-content3 .";
   grid-area: carousel;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5em;
 }
 .carousel::before {
   content: url("../img/Flechas(2).svg");
@@ -159,8 +168,71 @@ div[class^="carousel-content"] > p {
 .lorem {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 1fr 1.3fr;
+  grid-template-areas: "lorem-container1" "lorem-container2";
   grid-area: lorem;
+  position: relative;
+}
+
+.lorem-container1 {
+  display: grid;
+  grid-template-columns: 437px 1fr;
+  grid-template-rows: 1fr;
+  grid-area: lorem-container1;
+  text-align: center;
+  padding-right: 6em;
+}
+.lorem-container1 img {
+  width: 60%;
+}
+
+.lorem-container2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-area: lorem-container2;
+  text-align: left;
+  position: relative;
+  top: -55%;
+}
+.lorem-container2 h2 {
+  font-size: 2em;
+}
+.lorem-cont2-img2 {
+  width: 100%;
+  height: 90%;
+}
+.lorem-cont2-img1 {
+  width: 80%;
+  height: 100%;
+}
+.lorem-container2-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  align-items: center;
+}
+.lorem-moved {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 20%;
+  margin-right: 10em;
+  text-align: left;
+  height: 90%;
+}
+.lorem-moved img {
+  margin-right: 4em;
+}
+.lorem-moved .lorem-container2-text a {
+  justify-content: center;
+  background-color: #000333;
+}
+.lorem-moved .lorem-container2-text a p {
+  color: white;
+}
+.lorem-moved .lorem-container2-text a img {
+  filter: grayscale(1) invert(1);
 }
 
 .footer {
