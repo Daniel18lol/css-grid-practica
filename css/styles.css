@@ -10,6 +10,8 @@ html {
   font-family: serif;
   text-decoration: none;
   color: black;
+
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .grid-container {
@@ -75,6 +77,7 @@ html {
   grid-template-rows: repeat(3, auto);
   grid-area: maincontent-text;
   width: 380px;
+  align-items: center;
 }
 
 .maincontent-text h1 {
@@ -168,7 +171,7 @@ div[class^="carousel-content"] > p {
 .lorem {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1.3fr;
+  grid-template-rows: 1fr 320px;
   grid-template-areas: "lorem-container1" "lorem-container2";
   grid-area: lorem;
   position: relative;
@@ -237,11 +240,11 @@ div[class^="carousel-content"] > p {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1px 1px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 50px;
   grid-template-areas: "footer-text footer-imgs" "footer-imglink footer-imglink";
   grid-area: footer;
+  gap: 4em;
 }
 
 .footer-text {
@@ -249,12 +252,21 @@ div[class^="carousel-content"] > p {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-area: footer-text;
+  align-items: center;
 }
 
 .footer-imgs {
   grid-area: footer-imgs;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40%;
 }
 
 .footer-imglink {
   grid-area: footer-imglink;
+  letter-spacing: 1em;
+  text-align: center;
+}
+.dinamic {
+  letter-spacing: 0.7em;
 }
